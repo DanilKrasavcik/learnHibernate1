@@ -25,7 +25,7 @@ public static void main(String[] args) {
     userService.getAllUsers();
     userService.cleanUsersTable();
     userService.dropUsersTable();
-    Util.closeConnection(Util.getConnection());
+    Util.closeSessionFactory(Util.getSessionFactory());
 
 }
 }
